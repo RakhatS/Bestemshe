@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="vbox" prefHeight="500.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.Classes.GameField">
+  <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem fx:id="buttonBastyBet" mnemonicParsing="false" text="Basty bet" />
+                  <MenuItem fx:id="buttonJanadanbastau" mnemonicParsing="false" text="Jañadan bastau" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Kömek">
+            <items>
+              <MenuItem fx:id="buttonEreje" mnemonicParsing="false" text="Ereje" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+    <AnchorPane accessibleRole="BUTTON" maxHeight="-1.0" maxWidth="-1.0" style="-fx-background-color: #F5B041;" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="640.0">
+               <image>
+                  <Image url="@../img/fon.jpg" />
+               </image>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </ImageView>
+            <ImageView fx:id="imgX1" fitHeight="150.0" fitWidth="200.0" layoutX="77.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/img5.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgX5" fitHeight="150.0" fitWidth="200.0" layoutX="472.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/img5.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgX4" fitHeight="150.0" fitWidth="200.0" layoutX="371.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/img5.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgX3" fitHeight="150.0" fitWidth="200.0" layoutX="275.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/img5.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgX2" fitHeight="150.0" fitWidth="200.0" layoutX="175.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/img5.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgY5" fitHeight="150.0" fitWidth="200.0" layoutX="77.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../img/img5.png" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgY2" fitHeight="150.0" fitWidth="200.0" layoutX="371.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../img/img5.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgY3" fitHeight="150.0" fitWidth="200.0" layoutX="275.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../img/img5.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgY4" fitHeight="150.0" fitWidth="200.0" layoutX="175.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../img/img5.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgY1" fitHeight="150.0" fitWidth="200.0" layoutX="472.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../img/img5.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextArea fx:id="tablepointX" editable="false" layoutX="7.0" layoutY="285.0" prefHeight="64.0" prefWidth="64.0" promptText="0" style="-fx-font-size: 20;" text="0" />
+            <TextArea fx:id="tablepointY" editable="false" layoutX="7.0" layoutY="138.0" prefHeight="64.0" prefWidth="64.0" promptText="0" style="-fx-font-size: 20;" text="0" />
+            <ImageView fitHeight="108.0" fitWidth="54.0" layoutX="14.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true" fx:id="xStrelka">
+               <image>
+                  <Image url="@../img/strelka.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D x="18.0" z="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <Text fx:id="txtFirstPName" fill="RED" layoutX="77.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="275.0000009536743">
+               <font>
+                  <Font name="Algerian" size="36.0" />
+               </font></Text>
+            <Text fx:id="txtSecondPName" fill="RED" layoutX="79.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="318.0000009536743">
+               <font>
+                  <Font name="Algerian" size="36.0" />
+               </font></Text>
+            <Button fx:id="resButton" cancelButton="true" defaultButton="true" disable="true" minHeight="2.0" minWidth="0.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" visible="false" wrapText="true" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
